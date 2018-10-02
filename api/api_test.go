@@ -1,13 +1,13 @@
 package api
 
 import (
-	"github.com/bitly/go-simplejson"
 	"io/ioutil"
 	"net/http"
 	"net/http/httptest"
 	"strings"
 	"testing"
 
+	simplejson "github.com/bitly/go-simplejson"
 	"github.com/stretchr/testify/assert"
 )
 
