@@ -29,9 +29,9 @@ for os in windows linux darwin; do
         go build -ldflags="-s -w" -o $BUILD/$TARGET/$FILENAME || exit 1
     pushd $BUILD/$TARGET
     mv $FILENAME $TARGET
-    sha1sum+=("$(shasum -a 1 $TARGET || exit 1)")
     mv $TARGET $FILENAME
     cd .. && tar czvf $TARGET.tar.gz $TARGET
+    sha1sum+=("$(shasum -a 1 $TARGET.tar.gz || exit 1)")
     mv $TARGET.tar.gz $DIR/dist
     popd
 done
