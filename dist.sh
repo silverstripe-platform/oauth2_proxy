@@ -13,8 +13,8 @@ version=$(cat $DIR/version.go | grep "const VERSION" | awk '{print $NF}' | sed '
 goversion=$(go version | awk '{print $3}')
 sha1sum=()
 
-echo "... running tests"
-./test.sh
+# echo "... running tests"
+# ./test.sh
 
 for os in windows linux darwin; do
     echo "... building v$version for $os/$arch"
@@ -24,8 +24,9 @@ for os in windows linux darwin; do
     fi
     BUILD=$(mktemp -d ${TMPDIR:-/tmp}/oauth2_proxy.XXXXXX)
     TARGET="oauth2_proxy-$version.$os-$arch.$goversion"
-    FILENAME="oauth2_proxy$EXT"
+    FILENAME="oauth2-proxy$EXT"
     GOOS=$os GOARCH=$arch CGO_ENABLED=0 \
+    GO111MODULE=auto \
         go build -ldflags="-s -w" -o $BUILD/$TARGET/$FILENAME || exit 1
     pushd $BUILD/$TARGET
     mv $FILENAME $TARGET
