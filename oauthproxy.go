@@ -15,8 +15,8 @@ import (
 	"time"
 
 	"github.com/mbland/hmacauth"
-	"github.com/silverstripeltd/oauth2_proxy/cookie"
-	"github.com/silverstripeltd/oauth2_proxy/providers"
+	"github.com/silverstripe-platform/oauth2_proxy/cookie"
+	"github.com/silverstripe-platform/oauth2_proxy/providers"
 )
 
 const SignatureHeader = "GAP-Signature"

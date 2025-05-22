@@ -5,7 +5,7 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/silverstripeltd/oauth2_proxy/api"
+	"github.com/silverstripe-platform/oauth2_proxy/api"
 )
 
 type SilverStripeProvider struct {

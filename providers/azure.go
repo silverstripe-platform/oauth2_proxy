@@ -8,7 +8,7 @@ import (
 	"net/url"
 
 	simplejson "github.com/bitly/go-simplejson"
-	"github.com/silverstripeltd/oauth2_proxy/api"
+	"github.com/silverstripe-platform/oauth2_proxy/api"
 )
 
 type AzureProvider struct {

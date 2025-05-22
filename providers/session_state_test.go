@@ -6,7 +6,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/silverstripeltd/oauth2_proxy/cookie"
+	"github.com/silverstripe-platform/oauth2_proxy/cookie"
 	"github.com/stretchr/testify/assert"
 )
 
