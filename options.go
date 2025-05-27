@@ -15,7 +15,7 @@ import (
 
 	oidc "github.com/coreos/go-oidc"
 	"github.com/mbland/hmacauth"
-	"github.com/silverstripeltd/oauth2_proxy/providers"
+	"github.com/silverstripe-platform/oauth2_proxy/providers"
 )
 
 // Configuration Options that can be set by Command Line Flag, or Config File

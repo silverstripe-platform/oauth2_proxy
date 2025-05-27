@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"net/url"
 
-	"github.com/silverstripeltd/oauth2_proxy/api"
+	"github.com/silverstripe-platform/oauth2_proxy/api"
 )
 
 // stripToken is a helper function to obfuscate "access_token"
